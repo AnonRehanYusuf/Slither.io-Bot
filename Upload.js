@@ -5,8 +5,8 @@
 // @description  This extension modifies Agar.io, adding many cool features designed to help improve your gameplay.
 // @author       Rehan Yusuf
 // @match        http://Slither.io/*
-// @updateURL    
-// @downloadURL  
+// @updateURL    https://raw.githubusercontent.com/AnonRehanYusuf/Slither.io-Bot/master/Upload.js
+// @downloadURL  https://raw.githubusercontent.com/AnonRehanYusuf/Slither.io-Bot/master/Upload.js
 // @run-at       document-start
 // ==/UserScript==
  
