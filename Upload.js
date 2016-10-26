@@ -1,21 +1,24 @@
 // ==UserScript==
-// @name         Cyber Hack
-// @version      ???
-// @namespace    www.hacker-cyberhack.net
+// @name         AgarInfinity
+// @version      1.0.3
+// @namespace    Agarinfinity.com
 // @description  This extension modifies Agar.io, adding many cool features designed to help improve your gameplay.
-// @author       Rehan Yusuf
-// @match        http://Slither.io/*
-// @updateURL    https://raw.githubusercontent.com/AnonRehanYusuf/Slither.io-Bot/master/Upload.js
-// @downloadURL  https://raw.githubusercontent.com/AnonRehanYusuf/Slither.io-Bot/master/Upload.js
+// @author       Chris Pierce
+// @match        http://agar.io/*
+// @updateURL    http://agarinfinity.com/infinity.user.js
+// @downloadURL  http://agarinfinity.com/infinity.user.js
 // @run-at       document-start
 // ==/UserScript==
  
 window.stop();
 document.documentElement.innerHTML = "";
-var URL_SLITHER = "https://raw.githubusercontent.com/AnonRehanYusuf/Slither.io-Bot/master/Cyberhack.js"+new Date().getTime();
+var URL_JQUERY = "http://code.jquery.com/jquery-1.11.3.min.js";
+var URL_SOCKET_IO = "https://cdn.socket.io/socket.io-1.3.5.js";
+var URL_AGAR = "http://agarinfinity.com/agar.js?ts="+new Date().getTime();
+var URL_SLITHER = "http://agarinfinity.com/slither.js?ts="+new Date().getTime();
 loadScript(URL_JQUERY, function() {
     loadScript(URL_SOCKET_IO, function() {
-        if(location.hostname=='slither.io'){
+        if(location.hostname=='agar.io'){
             loadScript(URL_AGAR);
         }
     });
